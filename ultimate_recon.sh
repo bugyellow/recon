@@ -12,7 +12,7 @@ if [ -z "$domain" ]
                 exit 1
 fi
 
-sublist3r -d $domain -v -o op.txt
+subls -d $domain -v -o op.txt
 subfinder -d $domain -o op.txt  
 assetfinder --subs-only $domain | tee -a op.txt
 amass enum -passive -d $doamin | tee -a op.txt
