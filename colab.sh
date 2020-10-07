@@ -100,7 +100,8 @@ echo "${GREEN} #### Basic Tools #### ${RESET}"
 
 #install altdns
 echo "${BLUE} installing altdns ${RESET}"
-sudo pip3 install py-altdns
+sudo apt install python-pip
+pip install py-altdns
 echo "${BLUE} done${RESET}"
 echo ""
 
@@ -664,22 +665,22 @@ echo  "${BLUE} done${RESET}"
 echo ""
 
 echo "${BLUE} installing nuclei${RESET}"
-go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
+go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 echo "${BLUE} done${RESET}"
 echo ""
 
 echo "${BLUE} installing subfinder${RESET}"
-go get -u github.com/projectdiscovery/subfinder/cmd/subfinder
+go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 echo "${BLUE} done${RESET}"
 echo ""
 
 echo "${BLUE} installing httpx${RESET}"
-go get -u github.com/projectdiscovery/httpx/cmd/httpx
+go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 echo "${BLUE} done${RESET}"
 echo ""
 
 echo "${BLUE} installing shuffledns${RESET}"
-go get -u github.com/projectdiscovery/shuffledns/cmd/shuffledns
+go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 echo "${BLUE} done${RESET}"
 echo ""
 
